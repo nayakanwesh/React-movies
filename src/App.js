@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/footer';
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App bg-success">
+    
       <div className="container-fluid d-flex justify-content-between align-items-center" id="nav">
         <div className="h1">ToDoTonic</div>
         <div className="h1">Anwesh Channge</div>
@@ -65,6 +67,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
